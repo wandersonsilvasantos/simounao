@@ -8,8 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Montanha eu e vc vamo?</h1>
-    <input type="button" value="Sim" id="sim">
-    <input type ="button" value="Não" id="nao">
+    <main>
+        <h1>Montanha, eu e vc, vamo??</h1>
+        <input type="button" value="Sim" id="sim" onclick="mouseClicou()">
+        <input type ="button" value="Não" id="nao" onclick="mouseClicou()" onmouseenter="mouseEntra()" onmouseleave="mouseSai()">
+        <img id="imag" src="emj.png" alt="">
+        <div id="txt">Obrigada, toma aqui, é teu</div>
+    </main>
+    <script>
+        function mouseEntra(){
+            window.nao.value = "Sim"
+        }
+        function mouseSai(){
+            window.nao.value = "Não"
+        }
+        function mouseClicou(){
+            imag.style.display='block'
+            txt.style.display='block'
+        }
+    </script>
 </body>
 </html>

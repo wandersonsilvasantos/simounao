@@ -16,32 +16,61 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
-    color: rgb(0, 0, 0);
-    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
     margin: 20px;
 }
-#sim,#nao{
-    position: relative;
-    display:inline-block;
-    top: 100px;
+main{
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.308);
+    margin: 100px auto;
+    height: 350px;
+    border-radius: 20px;
+    max-width: 350px;
+}
+img{
+    width: 210px;
+    position: absolute;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,32px);
+    display: none;
+}
+#txt{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,125px);
+    font-size: 1.5em;
+    font-family: cursive;
+    font-weight: bolder;
+    color: rgb(138, 4, 4);
+    text-shadow: 0px 0px 3px red;
+    display: none; 
+}
+#sim,#nao{
     padding: 10px;
     border-radius: 10px;
-    width: 70px;
+    width: 100px;
     font-weight: bold;
-    a
+    border: none;
 }
 #sim{
     background-color: rgb(5, 202, 5);
     color: white;
-    
+    float: left;
+    box-shadow: 0px 0px 10px rgb(5, 223, 5);
+    transform: translateX(10px); 
 }
 #nao{
     background-color:rgb(201, 8, 8);
     color: white;
+    float:right;
+    box-shadow: 0px 0px 10px rgb(219, 9, 9);
+    transform: translateX(-10px);
 }
 #nao:hover{
-    top: 150px;
-    left: 70%;
+    background-color: rgb(5, 202, 5);
+    box-shadow: 0px 0px 10px rgb(5, 223, 5);
 }
+
+
